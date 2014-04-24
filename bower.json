@@ -1,0 +1,7 @@
+{
+  "name": "angular-style-prefixer",
+  "description": "Angular directive to auto-prefix ng-style attr properties in style attr.",
+  "main": "dist/angular-style-prefixer.js",
+  "version": "0.0.0",
+  "dependencies": {}
+}
