@@ -12,15 +12,15 @@ Install
 How to
 ======
 
-Use it simply declaring it in your Angular App dependencies.  
+Use it simply declaring it in your Angular App dependencies.
 It will disable default ngStyleDirective, and is based on default ngStyleDirective :
 ```javascript
 angular.module('myApp', ['heymath.ngStylePrefixer'])
 ```
-  
+
 Then just use ```-prefix-``` in the ng-style attr of html elements :
 ```html
-<div ng-style="{'-prefix-transform': transform}"></div>
+<div ng-style="{'-prefix-transform': 'scale(1)'}"></div>
 ```
 To generate :
 ```html
