@@ -41,7 +41,9 @@
           if (oldStyles && newStyles !== oldStyles) {
             for (val in oldStyles) {
               style = oldStyles[val];
-              element.css(style, '');
+              if (style) {
+                element.css(style, '');
+              }
             }
           }
           if (newStyles) {
