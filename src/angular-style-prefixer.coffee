@@ -28,7 +28,8 @@ angular.module('heymath.ngStylePrefixer', [])
 
       scope.$watch(attrs.ngStyle, (newStyles, oldStyles) ->
         if oldStyles and newStyles isnt oldStyles
-          element.css style, '' for val, style of oldStyles
+          for val, style of oldStyles
+            element.css style, '' if style
         element.css prefixer(newStyles) if newStyles
       , true)
   )
