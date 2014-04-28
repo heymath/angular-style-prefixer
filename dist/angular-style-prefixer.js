@@ -39,11 +39,9 @@
         return scope.$watch(attrs.ngStyle, function(newStyles, oldStyles) {
           var style, val;
           if (oldStyles && newStyles !== oldStyles) {
-            for (val in oldStyles) {
-              style = oldStyles[val];
-              if (style) {
-                element.css(style, '');
-              }
+            for (style in oldStyles) {
+              val = oldStyles[style];
+              element.css(style, '');
             }
           }
           if (newStyles) {
